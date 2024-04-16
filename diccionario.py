@@ -12,6 +12,18 @@ dic={"clara":10,
      }
 print(dic)
 
+#imprimir en orden alfabetico
+dic_alp={}
+keys = dic.keys()
+sorted_keys = sorted(keys)
+for key in sorted_keys:
+  dic_alp[key] = dic[key]
+print(dic_alp)
+
+#imprimir con los numeros del mayor a menor calificacion
+dic_num=dict(sorted(dic.items(),key=lambda item:item[1],reverse=True))
+print(dic_num)
+
 #crear una funcion para agregar diccionarios a una lista
 mi={
     "id":1,
